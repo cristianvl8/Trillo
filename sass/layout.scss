@@ -1,0 +1,38 @@
+.container {
+    max-width: 120rem;
+    margin: 8rem auto; //con esto centramos el contenedor dentro de su parent, que es el body
+    background-color: var(--color-grey-light-2);
+    box-shadow: var(--shadow-dark);
+
+    min-height: 50rem;
+}
+
+.header {
+    height: 7rem;
+    background-color: #fff;
+    border-bottom: var(--color-grey-light-2);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+
+    background-color: var(--color-grey-dark-1);
+
+    flex: 0 0 18%; // el primer valor es flex grow (no queremos que el elemento crezca si hay espacio), 
+    // el segundo es shrink (no queremos que que si no hay espacio se estreche) y el tercero es flex bases (width de 18% del container).
+}
+
+.hotel-view {
+
+    background-color: #fff;
+    background-color: orangered;
+
+    flex: 1 // este 1 significa que el elemento tiene que coger el resto del espacio del contenedor que sobra, en este caso 82% del width
+}
